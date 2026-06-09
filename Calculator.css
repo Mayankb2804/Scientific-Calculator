@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1f1f2e;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calculator {
+    background: #2b2b3c;
+    padding: 14px;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.msg-container {
+    height: 65px;
+    background: #111;
+    color: white;
+    border-radius: 12px;
+    margin-bottom: 12px;
+    padding: 12px;
+    box-sizing: border-box;
+    text-align: right;
+    font-size: 1.8rem;
+    overflow-x: auto;
+}
+
+table {
+    border-spacing: 4px;
+}
+
+button {
+    width: 55px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+/* Numbers */
+.number {
+    background: #505070;
+}
+
+.number:hover {
+    background: #656590;
+}
+
+/* Operators */
+.op,
+.ans {
+    background: #ff9800;
+}
+
+.op:hover,
+.ans:hover {
+    background: #ffad33;
+}
+
+/* Clear */
+.clearbtn {
+    background: #e53935;
+}
+
+.clearbtn:hover {
+    background: #ef5350;
+}
+
+/* Scientific Functions */
+.inv,
+.sin,
+.cos,
+.tan,
+.lg,
+.ln,
+.power,
+.reciprocal,
+.constπ,
+.conste,
+.ansval,
+.fact,
+.deg,
+.rad,
+.inverse,
+.sqroot {
+    background: #2f5d8a;
+}
+
+.inv:hover,
+.sin:hover,
+.cos:hover,
+.tan:hover,
+.lg:hover,
+.ln:hover,
+.power:hover,
+.reciprocal:hover,
+.constπ:hover,
+.conste:hover,
+.ansval:hover,
+.fact:hover,
+.deg:hover,
+.rad:hover,
+.sqroot:hover {
+    background: #3d74aa;
+}
+
+.ans {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.active-mode {
+    background: #1a3552 !important;
+    border: 2px solid white;
+}
+
+.msg-container::-webkit-scrollbar {
+    height: 4px;
+}
+
+.msg-container::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 10px;
+}
+
+.headinghistory {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 15px 0 8px 0;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+.history {
+    width: 100%;
+    min-height: 160px;
+    max-height: 160px;
+    overflow-y: auto;
+    background: #111;
+    color: white;
+    border-radius: 12px;
+    padding: 12px;
+    box-sizing: border-box;
+    font-size: 0.95rem;
+    white-space: pre-line;
+} .history {
+    scrollbar-width: thin;
+    scrollbar-color: #444 #1a1a1a;
+}
+#Scientific-calculator {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #3d74aa;
+    padding-bottom: 10px;
+}
